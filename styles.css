@@ -1,0 +1,297 @@
+/* colours 
+rgba(189, 53, 166, 0.596) purple(landing);
+rgba(71, 28, 64, 0.801);icon p
+*/
+
+body {
+  font-family: georgia;
+}
+
+.picture {
+  padding: 20px;
+  display: inline;
+  width: 40%;
+}
+h2 {
+  font-family: firenzen;
+}
+p {
+  font-weight: 500;
+}
+hr {
+  border: 10px dashed rgb(179, 116, 197);
+}
+.link {
+  color: darkviolet;
+}
+/* ********************
+CONATAINERS
+******************** */
+.container-fluid {
+  padding: 7% 15%;
+}
+/* ********************
+HEADING SECTION
+******************** */
+.landing {
+  display: flex;
+}
+
+.heading-main {
+  display: block;
+  color: black;
+  letter-spacing: 10px;
+  font-size: 60px;
+  font-family: firenzen;
+
+  animation-name: movie;
+  animation-duration: 5s;
+}
+
+.heading-sub {
+  display: block;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-family: tandelle;
+
+  animation-name: move-right;
+  animation-duration: 5s;
+}
+
+.text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
+}
+#title {
+  background-color: rgb(115, 134, 223);
+  padding-bottom: 50px;
+  color: black;
+}
+/* ********************
+ABOUT SECTION
+******************** */
+.about-text {
+  font-style: normal;
+  line-height: 40px;
+  font-size: 1.5rem;
+}
+
+/* ********************
+SKILL SECTION
+/* ******************** */
+#skills {
+  background-color: white;
+  position: relative;
+  padding: 2% auto;
+  padding-top: 5%;
+}
+.skill-text {
+  text-align: center;
+  font-family: firenzen;
+  font-size: 3rem;
+}
+
+.skill-title {
+  font-size: 1.5rem;
+}
+.skill-box {
+  padding: 5%;
+  margin: auto;
+}
+
+.icon {
+  color: rgba(0, 149, 226);
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: rgba(71, 28, 64, 0.801);
+}
+
+/* ********************
+ACTIVITIES SECTION
+/* ******************** */
+#activities {
+  background-color: rgb(115, 134, 223);
+  text-align: center;
+  padding: 10% 0;
+}
+.activities-box {
+  padding-top: 10% 15%;
+}
+.activities-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* ********************
+HOBBIES SECTION
+/* ******************** */
+#hobbies {
+  background-color: white;
+  margin: 0 15%;
+  padding: 0;
+}
+.hobbies-name {
+  background-color: white;
+  margin: 0 15% 0;
+  text-align: center;
+}
+.hobbies-text {
+  font-size: 3rem;
+}
+
+.hobbies-image {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* ********************
+SOCIAL-MEDIA
+/* ******************** */
+#social-media {
+  background-color: rgb(115, 134, 223);
+  padding: 2% 0;
+}
+.social-text {
+  text-align: center;
+}
+.social-icon {
+  color: #000;
+  margin: 0 4px;
+}
+
+/* ********************
+KEY-FRAMES
+/* ******************** */
+
+@keyframes movie {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes move-right {
+  0% {
+    opacity: 0;
+    transform: translateX(+100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ********************
+MEDIA-QUERY
+/* ******************** */
+@media (max-width: 800px) {
+  .picture {
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  .heading-main {
+    display: block;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-family: firenzen;
+    text-align: left;
+  }
+
+  .heading-sub {
+    display: block;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-family: tandelle;
+    text-align: left;
+  }
+  .landing {
+    display: block;
+  }
+
+  .text-box {
+    display: block;
+    align-items: left;
+    justify-content: left;
+  }
+
+  /* ********************
+ABOUT SECTION
+******************** */
+  .about-text {
+    font-style: normal;
+    line-height: 50px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* ********************
+SKILL SECTION
+/* ******************** */
+
+  .skill-text {
+    text-align: center;
+    font-family: firenzen;
+    font-size: 3rem;
+  }
+
+  /* ********************
+ACTIVITIES SECTION
+/* ******************** */
+  #activities {
+    background-color: rgb(115, 134, 223);
+    text-align: left;
+    padding: 5% 0;
+  }
+  .activities-text {
+    font-size: rem;
+    line-height: 1.3;
+  }
+  /* ********************
+HOBBIES SECTION
+/* ******************** */
+  #hobbies {
+    background-color: white;
+    margin: 0 15%;
+    padding: 0;
+  }
+
+  .hobbies-text {
+    font-size: 1.5rem;
+  }
+
+  .hobbies-image {
+    width: 100%;
+    border-radius: 20%;
+    margin: 20px;
+  }
+
+  /* ********************
+SOCIAL-MEDIA
+/* ******************** */
+  #social-media {
+    background-color: rgb(115, 134, 223);
+    padding: 1.5% 0;
+  }
+  .social-text {
+    text-align: center;
+  }
+  .social-icon {
+    color: #000;
+    margin: 0 2px;
+  }
+}
